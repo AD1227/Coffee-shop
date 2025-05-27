@@ -1,0 +1,197 @@
+<!--File name: index.html-->
+<!--Student's name: Alexie Dimasaca-->
+<!--Date:05/20/25-->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Café De Lumière offers a warm,elegant atmosphere where light, flavor, and conversation blend perfectly.">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- My stylesheet-->
+     <link rel="stylesheet" href="css/styles.css">
+
+    <title>Café De Lumière</title>
+  </head>
+  <body>
+
+    <!--Boostrap Navigation bar-->
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top text-white">
+        <a class="navbar-brand" href="index.html">Café De Lumière</a>
+
+        <!--Hamburger icon-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-ontrols="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+    <!--Navbar links-->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="menu.html">Menu</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="order-online.html">Order Online</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+
+        </ul>
+    </div>
+    </nav>
+
+
+    <!--Main Content Area-->
+
+    <main class="container mt-5">
+        <div class=" bg-greek-villa p-4 text-capitalize">
+          <h2 class="text-center">Order Ahead</h2>
+          <form class="row g-3">
+           
+            <legend>customer information</legend>
+            <div class="col-md-6">
+               <label for="fName">First Name:</label>
+               <input type="text" name="fName" id="fName" class="form-control" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="lname">last name:</label>
+              <input type="text" name="lname" id="lname" class="form-control" required>
+            </div>
+            <div class="col-md-6">
+               <label for="email">Email:</label>
+               <input type="email" name="email" id="email" class="form-control" required>
+
+            </div>
+            <div class="col-md-6">
+              <label for="phone">Phone:</label>
+              <input type="tel" id="phone" name="phone" class="form-control" required>
+
+            </div>
+            <div class="col-md-12">
+              <label for="inputAddress">Address:</label>
+              <input type="text" id="inputAddress" name="inputAddress" class="form-control" placeholder=" 123 main St." required>
+            </div>
+            <div class="col-md-12 mt-4">
+              <input type="text" id="inputAddress2" name="inputAddress2" class="form-control" placeholder="Apartment, Studio, or Floor">
+            </div>
+
+           
+
+              <legend>Order Type</legend>
+              <div class="form-check fit-content mr-1">
+                <input type="radio" id="radiodefault1" name="radioDefault" class="form-check-input">
+                <label for="radiodefault1" class="form-check-label">Delivery</label>
+              </div>
+              <div class="form-check radio-form">
+                <input type="radio" id="radiodefault2" name="radioDefault" class="form-check-input" required>
+                <label for="radiodefault2" class="form-check-label">Pick-up</label>
+              </div>
+              <br>
+
+              <div class="container  mt-5 mr-0">
+                <div id="form-container"></div>
+                <br>
+                <button type="button" class="btn btn-lg btn-outline-warning btn-placement" onclick="addItemForm()">Add Item</button>
+                <h3 class="text-center">Grand Total: $<span id="grand-total">0.00</span></h3>
+              </div>
+             
+                <div class="btn-wrapper container">
+                   <button type="submit" id="submit" value="submit" class=" btn-lg btn btn-warning">Order Now</button>
+                </div>
+                
+          </form>
+
+
+        </div>
+
+
+
+    </main>
+
+    <!--Footer-->
+    <footer class="jumbotron-fluid  bg-dark-orange">
+
+
+      <div class="container pt-5">
+        <div class="row align-items-start">
+            <div class="col">
+              <img src="images/coffee-shop-logo.png" alt="Café De Lumière" class="  img-fluid">
+                <h2>About Us</h2>
+                <p>Welcome to Café De Lumière - where every cup tells a story. Founded in 2012 in a quiet corner of the city, our café was inspired by the charm of European coffee houses and a passion for meaningful conversation over a perfect brew. What began as a small neighborhood spot has grown into a beloved local retreat, known for its artisancoffee, warm atmosphere, and carefully curated pastries. Whether you're here to work, relax, or reconnect, we're honored to be part of your everyday moments.</p>
+
+            </div>
+            <div class="col">
+              <h3>Hours</h3>
+               <table class="table table-sm table-bordered">
+                <th>Walk-in</th>
+                <th>Drive Thru</th>
+                <tr>
+                  <td>Mon-Fri: 6AM to 1PM</td>
+                  <td>Mon-Fri: 5AM to 5PM</td>
+                </tr>
+                 <tr>
+                  <td>Saturday: 8AM to 1PM</td>
+                  <td>Saturday: 6AM to 4PM</td>
+                </tr>
+                 <tr>
+                  <td>Sunday: CLOSED</td>
+                  <td>Sunday: 8AM to 3PM</td>
+                </tr>
+              </table>
+              <div>
+                <p>Visit Café De Lumière at 2815 W Broadway, Vancouver, BC V6K 2G6, Canada</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18659.402720588485!2d-123.20491558916017!3d49.26431470000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548673003ff8849f%3A0x2267a3e37b908323!2sLumiere%20Cafe!5e1!3m2!1sen!2sus!4v1748005572367!5m2!1sen!2sus" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+            </div>
+            <div class="col">
+              <h3>Log In. Light Up Your Day.</h3>
+              <h5>Welcome to Café De Lumière Rewards</h5>
+              <p> Sign in now and enjoy<span> 50% off your next handcrafted drink</span>-our way of saying merci.</p>
+              <p> Join our Loyalty circle and unlock:<br>
+                  *Exclusive member-only offers<br>
+                  *A free drink on your birthday<br>
+                  *Surprise rewards with every sip.
+              </p>
+              <p>Because every great day starts with a little light-and a lot of coffee.</p>
+              <div>
+                <a href="log-in-page.html" role="button"id="sign-up" value="sign-up" class="btn-lg btn btn-warning">Log In</a>
+                <a href="log-in-page.html" role="button"id="sign-up" value="sign-up" class="btn-lg btn btn-primary">Join the Rewards</a>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="container text-center text-white">
+            <p>&copy; Copyright 2021. All Rights Reserved.</p>
+            <p><a href="mailto:cafedelumiere@gmail.com" class="text-white">cafedelumiere@gmail.com</a></p>
+            <a href="https://www.facebook.com/cafedelumiere" target="_blank"><img src="images/facebook-logo.png" alt="black and white Facebook logo" class="pr-4"></a> 
+            <a href="https://twitter.com/cafedelumiere" target="_blank"><img src="images/twitter-logo.png" alt="black and white Twitter logo"></a> 
+        </div>
+        
+    </footer> 
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
