@@ -152,6 +152,12 @@ nav {
         font-size: 3em;
     }
 
+    /* style for loading page*/
+    .update-img{
+        padding-left: 25%;
+        padding-top: 5%;
+    }
+
 
 }
 
@@ -176,6 +182,12 @@ nav {
     .video-container{
         height: 250px;
         width: 400px;
+    }
+
+       /* style for loading page*/
+    .update-img{
+        padding-left: 35%;
+        padding-top: 5%;
     }
 
 }
