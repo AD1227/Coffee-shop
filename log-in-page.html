@@ -7,15 +7,18 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content=" Café De Lumière offers a warm, elegant atmosphere where light, flavor, and conversation blend perfectly.">
+    <meta name="description" content="Café De Lumière offers a warm,elegant atmosphere where light, flavor, and conversation blend perfectly.">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-     <!-- Favicon -->
-        <link rel="shortcut icon" href="images/favicon.ico">
-    	  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
-        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-      	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
+
+      <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+  	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+  	<link rel="icon" sizes="192x192" href="images/android-chrome-192.png">
+
     <!-- My stylesheet-->
      <link rel="stylesheet" href="css/styles.css">
 
@@ -42,7 +45,7 @@
                     <a class="nav-link" href="menu.html">Menu</a>
                 </li>
                  <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
+                    <a class="nav-link" href="rewadard.html">Rewards</a>
                 </li>
                  <li class="nav-item">
                     <a class="nav-link" href="order-online.html">Order Online</a>
@@ -58,18 +61,76 @@
     <!--main-->
     <main>
 
-      <div class=" container update-message bg-greek-villa">
-        <div class="update-img">
-                  <img src="images/loading.gif" alt="Updating">
+     <div class="container log-in-container rounded" id="loginForm">
+          <div class="row justify-content-center"> 
+             <div class=" mb-5 col-md-8">
+              <form>
+                  <h4>Sign in or Create an Account.</h4>
+                  <div class="mb-3">
+                    <label for="loginEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="loginEmail" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
 
-        </div>
-        <div class="lead text-capitalize text-center">
-                    <p class="lead text-dark">Our Website is currently being updated.<br>
-                       We apologize for any inconvenience and appreciate your patience!</p>
+                  <div class="mb-3">
+                    <label for="loginPassword" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="loginPassword">
+                  </div>
 
-        </div>
-      </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                  </div>
 
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+
+              </form>
+
+             </div>
+
+              <div class="col-md-8 mb-3 text-center">
+                
+                <h5>Join our Café de Lumière rewards</h5>
+                <p class="lead">As a member, start earning free food and drinks, unlock our best offers and celebrate your birthday with a treat from us. Best of all, it's free to join.</p>
+                <button type="button" onclick="showSignup()" class=" btn btn-primary mt-5">Join now</button>
+             </div>
+
+          </div>
+
+         
+
+         
+
+     </div>
+
+
+
+     <div class=" container sign-up-container rounded" id="signupForm">
+            <form>
+              <h5>Personal Information</h5>
+              <div class="mb-3">
+                <input placeholder="First Name" class="form-control" id="fname" type="text"><br>
+
+               <input placeholder="Last Name" class="form-control" id="lname" type="text"><br>
+              </div>
+             
+
+             <h5>Account Security</h5>
+
+                <div class="mb-3 p-2">
+                   <input placeholder="Email Address" class="form-control" id="signupEmail" type="text" aria-describedby="tips" aria-required="true">
+                   <div id="tips" class="form-text">This will be your username</div><br>
+
+                   <input placeholder="Password" class="form-control" id="signupPassword" type="password" aria-required="true">
+
+
+                </div>
+            
+             <button type="submit" class="btn btn-primary">Sign up</button>
+
+
+            </form>
+     </div>
 
     </main>
 
@@ -79,15 +140,20 @@
 
 
     <!--Footer-->
-    <footer class="jumbotron-fluid  bg-dark-orange">
+          <footer class="jumbotron-fluid  bg-light-brown">
 
 
       <div class="container pt-5">
         <div class="row align-items-start">
-            <div class="col">
+            <div class="col m-3">
               <img src="images/coffee-shop-logo.png" alt="Café De Lumière" class="  img-fluid">
+              <div class="mt-5">
                 <h2>About Us</h2>
-                <p>Welcome to Café De Lumière - where every cup tells a story. Founded in 2012 in a quiet corner of the city, our café was inspired by the charm of European coffee houses and a passion for meaningful conversation over a perfect brew. What began as a small neighborhood spot has grown into a beloved local retreat, known for its artisancoffee, warm atmosphere, and carefully curated pastries. Whether you're here to work, relax, or reconnect, we're honored to be part of your everyday moments.</p>
+                <p>Welcome to Café De Lumière - where every cup tells a story. Founded in 2012 in a quiet corner of the city, our café was inspired by the charm of European coffee houses and a passion for meaningful conversation over a perfect brew.</p>
+                <p> What began as a small neighborhood spot has grown into a beloved local retreat, known for its artisan coffee, warm atmosphere, and carefully curated pastries. 
+                <p>Whether you're here to work, relax, or reconnect, we're honored to be part of your everyday moments.</p>
+
+              </div>
 
             </div>
             <div class="col">
@@ -115,18 +181,20 @@
 
             </div>
             <div class="col">
-              <h3>Log In. Light Up Your Day.</h3>
-              <h5>Welcome to Café De Lumière Rewards</h5>
+              
+              <h2>Welcome to Café De Lumière Rewards</h2>
+
+              <h5> Sign in, sip, and let the light in</h5>
               <p> Sign in now and enjoy<span> 50% off your next handcrafted drink</span>-our way of saying merci.</p>
               <p> Join our Loyalty circle and unlock:<br>
                   *Exclusive member-only offers<br>
                   *A free drink on your birthday<br>
                   *Surprise rewards with every sip.
               </p>
-              <p>Because every great day starts with a little light and a lot of coffee.</p>
+              <p>Because every great day starts with a little light-and a lot of coffee.</p>
               <div>
-                <button type="button" id="log-in" value="log-in" class=" btn-lg btn btn-warning">Log In</button>
-                <button type="button" id="sign-up" value="sign-up" class="btn-lg btn btn-primary">Join the Rewards</button>
+                <button type="button" class="btn-lg btn btn-primary btn-outline-dark text-white" onclick="window.location.href='log-in-page.html'">Log in</button>
+               <button type="button" class="btn btn-lg btn-primary btn-outline-dark text-white" onclick="window.location.href='log-in-page.html?show=signupForm'">Join now</button>
               </div>
             </div>
         </div>
