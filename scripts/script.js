@@ -1,11 +1,61 @@
 //jQuery for hero image to consume the header window space
 $(document).ready(function(){
     $('.hero').height($(window).height());
-});
-
-$(document).ready(function(){
     $('.hero-contact').height($(window).height());
 });
+
+//this function is to show and hide rewards on slide bar in gallery
+
+const btn = getElementById("btn-rewards");
+
+function showRewards100(){
+    
+    document.getElementById("rewards-100").style.display = "flex";
+    document.getElementById("rewards-200").style.display = "none";
+   document.getElementById("rewards-300").style.display = "none";
+    document.getElementById("rewards-400").style.display = "none";
+    document.getElementById("rewards-500").style.display = "none";
+
+
+}
+function showRewards200(){
+   
+    document.getElementById("rewards-100").style.display = "none";
+    document.getElementById("rewards-200").style.display = "flex";
+    document.getElementById("rewards-300").style.display = "none";
+    document.getElementById("rewards-400").style.display = "none";
+    document.getElementById("rewards-500").style.display = "none";
+
+
+}
+function showRewards300(){
+    document.getElementById("rewards-100").style.display = "none";
+    document.getElementById("rewards-200").style.display = "none";
+    document.getElementById("rewards-300").style.display = "flex";
+   document.getElementById("rewards-400").style.display = "none";
+    document.getElementById("rewards-500").style.display = "none";
+
+
+}
+function showRewards400(){
+    document.getElementById("rewards-100").style.display = "none";
+    document.getElementById("rewards-200").style.display = "none";
+    document.getElementById("rewards-300").style.display = "none";
+   document.getElementById("rewards-400").style.display = "flex";
+   document.getElementById("rewards-500").style.display = "none";
+
+
+}
+function showRewards500(){
+    document.getElementById("rewards-100").style.display = "none";
+    document.getElementById("rewards-200").style.display = "none";
+    document.getElementById("rewards-300").style.display = "none";
+    document.getElementById("rewards-400").style.display = "none";
+    document.getElementById("rewards-500").style.display = "flex";
+
+
+}
+
 
 const itemPrices ={
       //"Coffee  
@@ -159,7 +209,7 @@ function addItemForm() {
 
     });
 
-    //Update the total when the quantty is change
+    //Update the total when the quantity is change
     quantityInput.addEventListener('input',updateTotal);
 
     function updateGrandtotal(){
@@ -176,3 +226,66 @@ function addItemForm() {
 
     updateGrandtotal();
 }
+
+
+
+function showLogin(){
+    document.getElementById("loginForm").style.display ="block";
+    document.getElementById("signupForm").style.display="none";
+}
+
+function showSignup(){
+    document.getElementById("loginForm").style.display = "none";
+    document.getElementById("signupForm").style.display = "block";
+}
+
+document.getElementById("loginForm").addEventListener("submit",function(event){
+    event.preventDefault(); //Prevent default from submission
+
+    const username = document.getElementById("loginEmail").value.trim();
+    const password = document.getElementById("loginPassword").value.trim();
+
+    if(username && password){
+        //All fields are filled in
+        window.location.href ="index.html";
+    } else {
+        alert("Please fill in all fields.")
+    }
+});
+
+document.getElementById("signupForm").addEventListener("submit",function(event){
+    event.preventDefault(); //Prevent default from submission
+
+    const username = document.getElementById("signupEmail").value.trim();
+    const password = document.getElementById("signupPassword").value.trim();
+    const firstName = document.getElementById("fname").value.trim();
+    const lastname = document.getElementById("lname").value.trim();
+
+    if(username && password && firstName && lastname){
+        //All fields are filled in
+        window.location.href ="log-in-page.html";
+    } else {
+        alert("Please fill in all fields.")
+    }
+});
+
+//function to get url parameters
+function getQueryParam(param){
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get(param);
+}
+
+//Show signup if URL has ?show=signup
+
+window.onload = function(){
+    const show = getQueryParam("show");
+    if(show === "signupForm"){
+         document.getElementById("loginForm").style.display = "none";
+         document.getElementById("signupForm").style.display = "block";
+    }
+}
+
+
+
+
+
