@@ -1,0 +1,268 @@
+/*File name: styles.css
+Student's name: Alexie Dimasaca
+Date:05/20/25*/
+
+
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+nav {
+    background-color: #e9a04e;
+}
+
+/* Style for Header and hero image */
+.hero {
+    background-image: linear-gradient(rgba(238, 134, 43, 0.5), rgba(238, 134, 43, 0.5)), url(../images/hero-image-.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-contact {
+    background-image: linear-gradient(rgba(156, 104, 58, 0.5), rgba(156, 104, 58, 0.5)), url(../images/hero-contact-page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.welcome {
+    position: absolute;
+    top: 5%;
+    margin: auto;
+    padding: 2em;
+
+
+}
+
+.welcome h1 {
+    font-size: 2em;
+}
+
+/* style for menu */
+
+.l-img {
+    width: 300px;
+    height: 400px;
+}
+
+.justify-center {
+    display: flex;
+    justify-content: center;
+
+}
+
+.btn-wrapper {
+    text-align: center;
+    margin: 20px;
+}
+
+/* style for short maintenance message*/
+
+.update-img {
+
+
+    align-content: center;
+}
+
+.update-img img {
+    margin-top: 10%;
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+    align-items: center;
+}
+
+
+/* style for creating space at top*/
+.top-spacing {
+    top: 40%;
+    margin: auto;
+    padding: auto;
+}
+
+/* style for setting background color to greek villa */
+.bg-greek-villa {
+    background-color: #f0ebe3;
+}
+
+.bg-light-brown {
+    background-color: #f0c381;
+}
+
+.bg-espresso-brown {
+    background-color: #3b2f2f;
+}
+
+.bg-blue-grey{
+    
+    background-color: #4f6d7a;
+}
+.border-round {
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+}
+
+.video-container {
+    height: 200px;
+    width: 280px;
+}
+
+/* style for log in page and sign up page*/
+
+
+/*** style for log in page*/
+.log-in-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding: 1.5em;
+    border: 1px #b1541b;
+    background-color: #f0ebe3;
+
+}
+
+.sign-up-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+    margin-top: 10%;
+    margin-bottom: 20%;
+    padding: 1.5em;
+    border: 1px #b1541b;
+    background-color: #f0ebe3;
+}
+
+#signupForm {
+    display: none;
+}
+
+
+
+
+
+/* style for form */
+
+.btn-placement {
+    text-align: left;
+    padding: 15px;
+}
+
+.item-form {
+    padding: 2em;
+    border: 1px;
+    background-color: #fffafa;
+    width: 100%;
+    height: fit-content;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.fit-content {
+    height: fit-content;
+    width: fit-content;
+}
+
+
+/*style for map */
+.map {
+    width: 100%;
+    height: 50%;
+
+}
+
+.r-position {
+    float: right;
+}
+
+.l-position {
+    float: left;
+}
+
+.grid-template {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+
+}
+
+/* Style for Gallery page */
+.rewards-100{
+    display: flex;
+    background-color: #f7f4ef;
+}
+
+.rewards-200,
+.rewards-300,
+.rewards-400,
+.rewards-500 {
+    display: none;
+    background-color: #f7f4ef;
+
+}
+
+
+/* Media Query for Tablet viewport*/
+@media (min-width:768px) {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Style for Header and hero image */
+    .welcome {
+        top: 40%;
+    }
+
+    .welcome h1 {
+        font-size: 3em;
+    }
+
+}
+
+
+/* media query for Desktop viewport*/
+
+@media (min-width:998px) {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Style for Header and hero image */
+    .welcome {
+        top: 40%;
+    }
+
+    .welcome h1 {
+        font-size: 3em;
+    }
+
+    .video-container {
+        height: 250px;
+        width: 400px;
+    }
+
+    /* style for loading page*/
+    .update-img {
+        padding-left: 35%;
+        padding-top: 5%;
+    }
+
+}
